@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+}
+
+#root {
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-item {
+  cursor: pointer;
+}
+
+.title {
+  background: rgb(121, 242, 157);
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 8px;
+  line-height: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #666;
+  font-size: 14px;
+}
+
+.menu-title:hover {
+  background-color: #f5f5f5;
+}
+
+.menu-title.active {
+  color: rgb(0, 76, 163);
+  background-color: rgb(224, 239, 255);
+}
+
+.g-side {
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  height: 100%;
+  flex-shrink: 0;
+  width: 256px;
+  padding-top: 20px;
+  padding-right: 12px;
+  margin-right: 20px;
+  padding-left: 12px;
+  border-right: 1px solid #eee;
+}
+
+.g-content {
+  padding-left: 300px;
+}
+
+.file-content {
+  white-space: pre-wrap;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  width: calc(100% - 10px);
+  overflow: auto;
+  height: calc(100vh - 92px);
+}
+
+.line-num {
+  display: inline-block;
+  width: 60px;
+  padding-left: 10px;
+}
+
+.lines .token-line {
+  border-right: .5px solid #f5f5f5;
+  margin-right: 30px;
+}
+
+.code-editor {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#top-to-bottom-chart {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.menu-arrow {
+  display: inline-block;
+  width: 20px;
+}
+
+.menu-item-opened > .menu-title .menu-arrow {
+  transform: rotate(90deg);
+  transition: all .3s;
+}
